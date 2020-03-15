@@ -1,0 +1,13 @@
+<h1>Students Form</h1>
+<ul>
+<% @students.each do |student| %>
+<li><%=student.first_name%> <%=student.last_name%>
+<%=  link_to 'Edit Name', edit_student_path(student) %><br>
+</li>
+
+<% end %>
+</ul>
+
+<%=link_to 'Create a Student', new_student_path %>
+
+

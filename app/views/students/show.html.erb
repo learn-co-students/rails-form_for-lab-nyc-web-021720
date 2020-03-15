@@ -1,0 +1,9 @@
+<h1>Students</h1>
+<p>
+ First name: <%=@student.first_name%>  
+ <br/>
+ Last name: <%=@student.last_name%>
+<br>
+<%=link_to "edit",edit_student_path%>
+</p>
+<%= link_to "Back to all students" ,students_path %>
