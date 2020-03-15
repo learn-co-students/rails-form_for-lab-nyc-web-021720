@@ -1,0 +1,11 @@
+<h1>School Class Form</h1>
+
+<%= form_for(@student) do |fb| %>
+    <%= fb.label :first_name %>
+    <%= fb.text_field :first_name %>
+
+    <%= fb.label :last_name %>
+    <%= fb.text_field :last_name %>
+
+    <%= fb.submit "Update Student" %>
+<% end %>
