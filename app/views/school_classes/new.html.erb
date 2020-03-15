@@ -1,0 +1,11 @@
+<h1>School Class Form</h1>
+
+<%= form_for(SchoolClass.new) do |fb| %>
+    <%= fb.label :title %>
+    <%= fb.text_field :title %>
+    
+    <%= fb.label :room_number %>
+    <%= fb.text_field :room_number %>
+
+    <%= fb.submit "Create School class" %>
+<% end %>
